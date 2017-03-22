@@ -1,0 +1,21 @@
+[{
+  "id": 1,
+  "name": "J.K. Rowling",
+  "birthDate": "1965/07/31",
+  "books": []
+}, {
+  "id": 2,
+  "name": "J. R. R. Tolkien",
+  "birthDate": "1892/01/03",
+  "books": []
+}, {
+  "id": 3,
+  "name": "George R. R. Martin",
+  "birthDate": "1948/09/20",
+  "books": []
+}, {
+  "id": 4,
+  "name": "Patrick Rothfuss",
+  "birthDate": "1973/06/06",
+  "books": []
+}]
