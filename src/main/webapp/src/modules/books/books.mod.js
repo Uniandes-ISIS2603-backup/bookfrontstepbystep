@@ -7,22 +7,21 @@
             self = this;
             $stateProvider.state('booksList', {
                 url: '/list',
-                resolve: {
-                    books: function ($http) {
-                        return $http.get('data/books.json').then(function (response) {
-                            self.books = response.data;
-                        });
-                    }
-                },
                 views: {
                     'mainView': {
-                        templateUrl: basePath + 'books.list.html'
-
+                        templateUrl: basePath + 'books.list.html',
+                        controller: function ($scope, books) {
+                            $scope.records = self.books;
+                        },
+                        resolve: {
+                            books: function ($http) {
+                                return $http.get('data/books.json').then(function (response) {
+                                    self.books = response.data;
+                                });
+                            }
+                        }
                     }
                 },
-                controller: function ($scope, books) {
-                    $scope.records = books.value;
-                }
             }).state('bookCreate', {
                 url: '/create',
                 views: {
