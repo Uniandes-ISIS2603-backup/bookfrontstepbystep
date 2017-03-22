@@ -1,0 +1,19 @@
+<div class="col-md-12">
+    <div class="container-fluid">
+        <table class="table table-hover">
+             <thead>
+                <tr>
+                    <th>Name</th>    
+                    <th>Birth Date</th>  
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="record in records">
+                    <td id="{{$index}}-name">{{record.name}}</td>
+                    <td id="{{$index}}-descrption">{{record.birthDate}}</td>                   
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
