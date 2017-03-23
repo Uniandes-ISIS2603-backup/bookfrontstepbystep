@@ -2,13 +2,14 @@
     var app = angular.module('mainApp', [
         // External dependencies
         'ui.router',
-  // Internal modules dependencies       
+        // Internal modules dependencies       
         'bookModule',
-        'authorModule'
+        'authorModule',
+        'editorialModule'
     ]);
-   app.config(['$qProvider', function ($qProvider) {
-    $qProvider.errorOnUnhandledRejections(false);
-}]);
+    app.config(['$qProvider', function ($qProvider) {
+            $qProvider.errorOnUnhandledRejections(false);
+        }]);
 })(window.angular);
 
 
