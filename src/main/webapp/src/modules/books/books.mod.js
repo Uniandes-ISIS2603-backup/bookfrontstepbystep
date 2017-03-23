@@ -20,11 +20,11 @@
                             return $http.get('data/books.json');
                         }]
                 }
-            }).state('bookCreate', {
-                url: '/create',
-                views: {
+            }).state('bookDetail', {
+                url: '/{bookId:int}/detail',               
+                views: {                   
                     'mainView': {
-                        templateUrl: basePath + 'books.create.html'
+                        templateUrl: basePath + 'books.detail.html'
                     }
                 }
             });

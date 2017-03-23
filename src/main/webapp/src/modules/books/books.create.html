@@ -1,0 +1,52 @@
+<div class="col-md-12 well">
+    <form novalidate name="form" id="book-form" role="form" ng-submit="form.$valid && ctrl.saveRecord(currentRecord.id)">
+        <fieldset>
+            <input id="id" class="form-control" type="hidden" ng-model="currentRecord.id"/>
+            <!-- Name -->
+            <div class="form-group col-md-6">
+                <label for="name" class="col-md-2 control-label">Name</label>
+                <div class="col-md-10">
+                    <input id="name" name="name" class="form-control" type="text" ng-model="currentRecord.name"  disabled />
+                </div>
+            </div>
+            <!-- Description -->
+            <div class="form-group col-md-6" >
+                <label for="description" class="col-md-2 control-label">Description</label>
+                <div class="col-md-10">
+                    <input id="description" name="description" class="form-control" type="text" ng-model="currentRecord.description" disabled />
+                </div>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="image" class="col-md-2 control-label">Image</label>
+                <div class="col-md-10">
+                    <input id="image" name="image" class="form-control" type="text" ng-model="currentRecord.image" disabled />
+                </div>
+            </div>
+            <!-- ISBN -->
+            <div class="form-group col-md-6"  >
+                <label for="isbn" class="col-md-2 control-label">ISBN</label>
+                <div class="col-md-10">
+                    <input id="isbn" name="isbn" class="form-control" type="text" ng-model="currentRecord.isbn" disabled />
+                </div>
+            </div>
+            <!-- Publishing Date -->
+            <div class="form-group col-md-6" >
+
+                <label for="PublishingDate" class="col-md-2 control-label">Publishing Date:</label>
+                <div class="col-md-10">
+             
+                    <input id="publishingdate" name="publishingdate" class="form-control" type="date" ng-model="currentRecord.publishingdate" disabled />
+                </div>
+            </div>
+           <!-- Editorial -->
+            <div class="form-group col-md-6" >
+                <label for="editorial" class="col-md-2 control-label">Editorial</label>
+                <div class="col-md-10">
+                    <input id="editorial" name="editorial"  type="text" ng-model="currentRecord.editorial"disabled />
+                </div>
+            </div>
+           
+             </fieldset>
+       
+    </form>
+</div>

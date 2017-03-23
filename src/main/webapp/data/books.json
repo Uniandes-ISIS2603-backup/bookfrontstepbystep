@@ -8,7 +8,12 @@
         "editorial": {
             "id": 1,
             "name": "Oveja Negra"
-        }
+        },
+        "authors": [{
+                "id": 2,
+                "name": "J. R. R. Tolkien",
+                "birthDate": "1892/01/03"
+            }]
     }, {
         "id": 2,
         "name": "justo sollicitudin ut suscipit a feugiat et eros vestibulum ac est lacinia nisi venenat",
@@ -19,7 +24,12 @@
         "editorial": {
             "id": 1,
             "name": "Oveja Negra"
-        }
+        },
+        "authors": [{
+                "id": 2,
+                "name": "J. R. R. Tolkien",
+                "birthDate": "1892/01/03"
+            }]
     }, {
         "id": 3,
         "name": "fusce posuere felis sed lacus morbi sem mauris laoreet ut rhoncus aliquethoncus dui vel sem",
@@ -30,7 +40,13 @@
         "editorial": {
             "id": 2,
             "name": "Siruela"
-        }
+        },
+        "authors": [{
+                "id": 3,
+                "name": "George R. R. Martin",
+                "birthDate": "1948/09/20"
+
+            }]
     }, {
         "id": 4,
         "name": "orci nullam molestie nibh in lectus pellentesque at nulla suspendis in purus eu magna",
@@ -41,7 +57,12 @@
         "editorial": {
             "id": 2,
             "name": "Siruela"
-        }
+        },
+        "authors": [{
+                "id": 4,
+                "name": "Patrick Rothfuss",
+                "birthDate": "1973/06/06"
+            }]
     }, {
         "id": 5,
         "name": "tincidunt eu felis fusce posuere felis sed lacus morbi sem  laoreet",
@@ -52,7 +73,12 @@
         "editorial": {
             "id": 1,
             "name": "Oveja Negra"
-        }
+        },
+        "authors": [{
+                "id": 4,
+                "name": "Patrick Rothfuss",
+                "birthDate": "1973/06/06"
+            }]
     }, {
         "id": 6,
         "name": "et ultrices posuere cubilia curae mauris viverra diam vitae quam suspendis at turpis",
@@ -63,5 +89,10 @@
         "editorial": {
             "id": 2,
             "name": "Siruela"
-        }
+        },
+        "authors": [{
+                "id": 1,
+                "name": "J.K. Rowling",
+                "birthDate": "1965/07/31"
+            }]
     }]

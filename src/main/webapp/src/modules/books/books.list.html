@@ -1,9 +1,9 @@
 <div class="col-md-12">
     <div class="container-fluid">   
 
-        <div class="col-xs-18 col-sm-6 col-md-3" ng-repeat="record in records">
+        <div class="col-md-4" ng-repeat="record in records">
             <div  class="thumbnail" >
-                <a href="#!/records/{{record.id}}" >
+                <a ui-sref="bookDetail({bookId: record.id})" >
                     <img class="img-responsive" ng-src="{{record.image}}" alt="{{record.name}}"/>
                     <div class="caption">
                         <p>{{record.name}}</p>
@@ -11,29 +11,7 @@
                 </a>
             </div>
         </div>
-        <!--       <table class="table table-striped">
-                   <thead>
-                       <tr>
-                           <th>Name</th>    
-                           <th>Description</th>  
-                           <th>ISBN</th>    
-                           <th>Editorial</th>  
-                           <th>Image</th>  
-                           <th>Publishing Date</th>  
-                           
-                       </tr>
-                   </thead>
-                   <tbody>
-                       <tr ng-repeat="record in records">
-                           <td id="{{$index}}-name">{{record.name}}</td>
-                           <td id="{{$index}}-descrption">{{record.description}}</td>
-                           <td id="{{$index}}-isbn">{{record.isbn}}</td>
-                           <td id="{{$index}}-editorial">{{record.editorial.name}}</td>
-                           <td id="{{$index}}-image">{{record.image}}</td>
-                           <td id="{{$index}}-publishingdate">{{record.publishingdate}}</td>                   
-                       </tr>
-                   </tbody>
-               </table> -->
+         
     </div>
 
 </div>
