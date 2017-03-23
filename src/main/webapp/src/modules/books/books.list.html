@@ -1,17 +1,20 @@
 <div class="col-md-12">
     <div class="container-fluid">   
 
-        <div class="col-md-4" ng-repeat="record in records">
+        <div class="col-md-3" ng-repeat="record in records">
             <div  class="thumbnail" >
                 <a ui-sref="bookDetail({bookId: record.id})" >
-                    <img class="img-responsive" ng-src="{{record.image}}" alt="{{record.name}}"/>
+                    <img class="img-responsive" ng-src="{{record.image}}" alt="{{record.name}}"  height="100" width="100%"/>
                     <div class="caption">
                         <p>{{record.name}}</p>
+                        <ul ng-repeat="author in record.authors">
+                            <li>{{author.name}}</li>
+                        </ul>
                     </div>
                 </a>
             </div>
         </div>
-         
+
     </div>
 
 </div>

@@ -1,57 +1,30 @@
-<div class="col-md-12 well">
-    <div class="row">
-    <div class="col-md-6">
-        <img ng-src="{{"currentRecord.image"}}"  />
-    </div>
-    <div class="col-md-6" 
-        
-        <fieldset>
-            <input id="id" class="form-control" type="hidden" ng-model="currentRecord.id"/>
-            <!-- Name -->
-            <div class="form-group col-md-6">
-                <label for="name" class="col-md-2 control-label">Name</label>
-                <div class="col-md-10">
-                    <input id="name" name="name" class="form-control" type="text" ng-model="currentRecord.name"  disabled />
-                </div>
-            </div>
-            <!-- Description -->
-            <div class="form-group col-md-6" >
-                <label for="description" class="col-md-2 control-label">Description</label>
-                <div class="col-md-10">
-                    <input id="description" name="description" class="form-control" type="text" ng-model="currentRecord.description" disabled />
-                </div>
-            </div>
-            <div class="form-group col-md-6">
-                <label for="image" class="col-md-2 control-label">Image</label>
-                <div class="col-md-10">
-                    <input id="image" name="image" class="form-control" type="text" ng-model="currentRecord.image" disabled />
-                </div>
-            </div>
-            <!-- ISBN -->
-            <div class="form-group col-md-6"  >
-                <label for="isbn" class="col-md-2 control-label">ISBN</label>
-                <div class="col-md-10">
-                    <input id="isbn" name="isbn" class="form-control" type="text" ng-model="currentRecord.isbn" disabled />
-                </div>
-            </div>
-            <!-- Publishing Date -->
-            <div class="form-group col-md-6" >
 
-                <label for="PublishingDate" class="col-md-2 control-label">Publishing Date:</label>
-                <div class="col-md-10">
-             
-                    <input id="publishingdate" name="publishingdate" class="form-control" type="date" ng-model="currentRecord.publishingdate" disabled />
+<div class="col-md-12">
+    <div class="container-fluid">   
+        <div class="row">
+            <div class="col-md-6">
+                <img class="img-responsive" ng-src="{{currentRecord.image}}" />
+                <div class="caption">
+                    <p>{{currentRecord.name}}</p>
                 </div>
+                <ul ng-repeat="author in currentRecord.authors">
+                    <li>{{author.name}}</li>
+                </ul>
             </div>
-           <!-- Editorial -->
-            <div class="form-group col-md-6" >
-                <label for="editorial" class="col-md-2 control-label">Editorial</label>
-                <div class="col-md-10">
-                    <input id="editorial" name="editorial"  type="text" ng-model="currentRecord.editorial"disabled />
-                </div>
+            <div class="col-md-6">
+                <dl>
+                    <dd>{{currentRecord.description}}</dd>
+                    <hr>
+                    <span>ISBN</span>
+                    <dd>{{currentRecord.isbn}}</dd>
+                    <hr>
+                    <span>Publishing Date</span>
+                    <dd>{{currentRecord.publishingdate}}</dd>
+                    <hr>
+                    <span>Editorial</span>
+                    <dd>{{currentRecord.editorial.name}}</dd>
+                </dl>
             </div>
-           
-             </fieldset>
-       
+        </div>
+    </div>
 </div>
-  </div>

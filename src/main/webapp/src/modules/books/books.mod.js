@@ -5,28 +5,46 @@
             var basePath = 'src/modules/books/';
             $urlRouterProvider.otherwise("/booksList");
 
-            $stateProvider.state('booksList', {
-                url: '/list',
-                views: {
-                    'mainView': {
-                        templateUrl: basePath + 'books.list.html',
-                        controller: ['$scope', 'books', function ($scope, books) {
-                                $scope.records = books.data;
-                            }]
-                    }
-                },
+            $stateProvider.state('books', {
+                url: '/books',
+                abstract: true,
                 resolve: {
                     books: ['$http', function ($http) {
                             return $http.get('data/books.json');
                         }]
-                }
-            }).state('bookDetail', {
-                url: '/{bookId:int}/detail',               
-                views: {                   
+                },
+                views: {
                     'mainView': {
-                        templateUrl: basePath + 'books.detail.html'
+                        templateUrl: basePath + 'books.html',
+                        controller: ['$scope', 'books', function ($scope, books) {
+                                $scope.records = books.data;
+                            }]
                     }
                 }
+            }).state('booksList', {
+                url: '/list',
+                parent: 'books',
+                views: {
+                    'mainView': {
+                        templateUrl: basePath + 'books.list.html'
+                    }
+                }
+            }).state('bookDetail', {
+                url: '/{bookId:int}/detail',
+                parent: 'books',
+                param: {
+                    bookId: null
+                },
+                views: {
+                    'mainView': {
+                        templateUrl: basePath + 'books.detail.html',
+                        controller: ['$scope', '$stateParams', function ($scope, $params) {
+                                $scope.currentRecord = $scope.records[$params.bookId-1];
+                            }]
+                    }
+
+                }
+
             });
         }]);
 })(window.angular);

@@ -1,0 +1,98 @@
+[{
+        "id": 1,
+        "name": "The Lord of the Rings",
+        "image": "https://images-na.ssl-images-amazon.com/images/I/516GyHY9p6L.jpg",
+        "isbn": "930330149-8",
+        "description": "Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst. Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.",
+        "publishingdate": "2017/01/06",
+        "editorial": {
+            "id": 1,
+            "name": "Oveja Negra"
+        },
+        "authors": [{
+                "id": 2,
+                "name": "J. R. R. Tolkien",
+                "birthDate": "1892/01/03"
+            }]
+    }, {
+        "id": 2,
+        "name": "justo sollicitudin ut suscipit a feugiat et eros vestibulum ac est lacinia nisi venenat",
+        "image": "http://dummyimage.com/165x167.png/cc0000/ffffff",
+        "isbn": "196099297-X",
+        "description": "Etiam pretium iaculis justo. In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus. Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.",
+        "publishingdate": "2016/04/05",
+        "editorial": {
+            "id": 1,
+            "name": "Oveja Negra"
+        },
+        "authors": [{
+                "id": 2,
+                "name": "J. R. R. Tolkien",
+                "birthDate": "1892/01/03"
+            }]
+    }, {
+        "id": 3,
+        "name": "fusce posuere felis sed lacus morbi sem mauris laoreet ut rhoncus aliquethoncus dui vel sem",
+        "image": "http://dummyimage.com/165x167.png/cc0000/ffffff",
+        "isbn": "631383488-7",
+        "description": "Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque. Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus. Phasellus in felis. Donec semper sapien a libero. Nam dui.",
+        "publishingdate": "2016/11/22",
+        "editorial": {
+            "id": 2,
+            "name": "Siruela"
+        },
+        "authors": [{
+                "id": 3,
+                "name": "George R. R. Martin",
+                "birthDate": "1948/09/20"
+
+            }]
+    }, {
+        "id": 4,
+        "name": "orci nullam molestie nibh in lectus pellentesque at nulla suspendis in purus eu magna",
+        "image": "http://dummyimage.com/165x167.png/5fa2dd/ffffff",
+        "isbn": "084007710-6",
+        "description": "Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.",
+        "publishingdate": "2016/12/17",
+        "editorial": {
+            "id": 2,
+            "name": "Siruela"
+        },
+        "authors": [{
+                "id": 4,
+                "name": "Patrick Rothfuss",
+                "birthDate": "1973/06/06"
+            }]
+    }, {
+        "id": 5,
+        "name": "tincidunt eu felis fusce posuere felis sed lacus morbi sem  laoreet",
+        "image": "http://dummyimage.com/165x167.jpg/5fa2dd/ffffff",
+        "isbn": "267917365-1",
+        "description": "Nulla mollis molestie lorem. Quisque ut erat.",
+        "publishingdate": "2016/04/27",
+        "editorial": {
+            "id": 1,
+            "name": "Oveja Negra"
+        },
+        "authors": [{
+                "id": 4,
+                "name": "Patrick Rothfuss",
+                "birthDate": "1973/06/06"
+            }]
+    }, {
+        "id": 6,
+        "name": "Harry Potter and the Sorcerer's Stone",
+        "image": "http://m.cdn.blog.hu/ko/kockagyar/image/harry_potter_poster/harry_potter_1.jpg",
+        "isbn": "077296395-9",
+        "description": "Suspendisse accumsan tortor quis turpis.",
+        "publishingdate": "2016/04/18",
+        "editorial": {
+            "id": 2,
+            "name": "Siruela"
+        },
+        "authors": [{
+                "id": 1,
+                "name": "J.K. Rowling",
+                "birthDate": "1965/07/31"
+            }]
+    }]
