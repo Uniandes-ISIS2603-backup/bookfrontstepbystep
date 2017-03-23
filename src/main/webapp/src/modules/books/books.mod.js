@@ -4,24 +4,22 @@
     mod.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
             var basePath = 'src/modules/books/';
             $urlRouterProvider.otherwise("/booksList");
-            self = this;
+
             $stateProvider.state('booksList', {
                 url: '/list',
                 views: {
                     'mainView': {
                         templateUrl: basePath + 'books.list.html',
-                        controller: function ($scope, books) {
-                            $scope.records = self.books;
-                        },
-                        resolve: {
-                            books: function ($http) {
-                                return $http.get('data/books.json').then(function (response) {
-                                    self.books = response.data;
-                                });
-                            }
-                        }
+                        controller: ['$scope', 'books', function ($scope, books) {
+                                $scope.records = books.data;
+                            }]
                     }
                 },
+                resolve: {
+                    books: ['$http', function ($http) {
+                            return $http.get('data/books.json');
+                        }]
+                }
             }).state('bookCreate', {
                 url: '/create',
                 views: {
