@@ -1,8 +1,8 @@
 
-<div class="col-md-12">
+<div class="col-md-12" well>
     <div class="container-fluid">   
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-3">
                 <img class="img-responsive" ng-src="{{currentRecord.image}}" />
                 <div class="caption">
                     <p>{{currentRecord.name}}</p>
@@ -11,18 +11,21 @@
                     <li>{{author.name}}</li>
                 </ul>
             </div>
-            <div class="col-md-6">
-                <dl>
-                    <dd>{{currentRecord.description}}</dd>
-                    <hr>
-                    <span>ISBN</span>
+            <div class="col-md-3">
+                <dl>                  
+                    <strong> ISBN</strong>
                     <dd>{{currentRecord.isbn}}</dd>
                     <hr>
-                    <span>Publishing Date</span>
+                    <strong>Publishing Date</strong>
                     <dd>{{currentRecord.publishingdate}}</dd>
                     <hr>
-                    <span>Editorial</span>
+                    <strong class="bold">Editorial</strong>
+                 
                     <dd>{{currentRecord.editorial.name}}</dd>
+                    <hr>
+                    <strong class="bold">Description</strong>
+                     <dd>{{currentRecord.description}}</dd>
+                    
                 </dl>
             </div>
         </div>
