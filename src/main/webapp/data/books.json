@@ -1,71 +1,67 @@
 [{
-  "id": 1,
-  "name": "sapien in sapien iaculis congue vivamus metus arcu adipiscing molestie hendrerit at",
-  "image": "http://dummyimage.com/135x133.jpg/5fa2dd/ffffff",
-  "isbn": "930330149-8",
-  "description": "Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst. Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.",
-  "publishingdate": "2017/01/06"
-}, {
-  "id": 2,
-  "name": "justo sollicitudin ut suscipit a feugiat et eros vestibulum ac est lacinia nisi venenatis tristique fusce",
-  "image": "http://dummyimage.com/124x189.png/cc0000/ffffff",
-  "isbn": "196099297-X",
-  "description": "Etiam pretium iaculis justo. In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus. Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.",
-  "publishingdate": "2016/04/05"
-}, {
-  "id": 3,
-  "name": "fusce posuere felis sed lacus morbi sem mauris laoreet ut rhoncus aliquet pulvinar sed nisl nunc rhoncus dui vel sem",
-  "image": "http://dummyimage.com/165x167.png/cc0000/ffffff",
-  "isbn": "631383488-7",
-  "description": "Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque. Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus. Phasellus in felis. Donec semper sapien a libero. Nam dui.",
-  "publishingdate": "2016/11/22"
-}, {
-  "id": 4,
-  "name": "orci nullam molestie nibh in lectus pellentesque at nulla suspendisse potenti cras in purus eu magna",
-  "image": "http://dummyimage.com/175x203.png/5fa2dd/ffffff",
-  "isbn": "084007710-6",
-  "description": "Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.",
-  "publishingdate": "2016/12/17"
-}, {
-  "id": 5,
-  "name": "tincidunt eu felis fusce posuere felis sed lacus morbi sem mauris laoreet",
-  "image": "http://dummyimage.com/159x214.jpg/5fa2dd/ffffff",
-  "isbn": "267917365-1",
-  "description": "Nulla mollis molestie lorem. Quisque ut erat.",
-  "publishingdate": "2016/04/27"
-}, {
-  "id": 6,
-  "name": "et ultrices posuere cubilia curae mauris viverra diam vitae quam suspendisse potenti nullam porttitor lacus at turpis",
-  "image": "http://dummyimage.com/111x182.png/cc0000/ffffff",
-  "isbn": "077296395-9",
-  "description": "Suspendisse accumsan tortor quis turpis.",
-  "publishingdate": "2016/04/18"
-}, {
-  "id": 7,
-  "name": "semper sapien a libero nam dui proin leo odio porttitor id consequat in",
-  "image": "http://dummyimage.com/174x219.jpg/dddddd/000000",
-  "isbn": "581637037-5",
-  "description": "Aenean fermentum. Donec ut mauris eget massa tempor convallis.",
-  "publishingdate": "2016/07/12"
-}, {
-  "id": 8,
-  "name": "sem praesent id massa id nisl venenatis lacinia aenean sit",
-  "image": "http://dummyimage.com/196x234.jpg/5fa2dd/ffffff",
-  "isbn": "540059030-6",
-  "description": "Nulla facilisi. Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit.",
-  "publishingdate": "2016/05/25"
-}, {
-  "id": 9,
-  "name": "lorem quisque ut erat curabitur gravida nisi at nibh in hac habitasse platea dictumst",
-  "image": "http://dummyimage.com/211x126.png/cc0000/ffffff",
-  "isbn": "725530980-1",
-  "description": "Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl. Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum. Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est. Phasellus sit amet erat.",
-  "publishingdate": "2016/08/19"
-}, {
-  "id": 10,
-  "name": "egestas metus aenean fermentum donec ut mauris eget massa tempor convallis nulla neque libero convallis eget",
-  "image": "http://dummyimage.com/223x191.bmp/5fa2dd/ffffff",
-  "isbn": "427521320-3",
-  "description": "Donec quis orci eget orci vehicula condimentum. Curabitur in libero ut massa volutpat convallis.",
-  "publishingdate": "2017/02/20"
-}]
+        "id": 1,
+        "name": "sapien in sapien iaculis congue vivamus metus arcu adipiscing molestie hendrerit at",
+        "image": "http://dummyimage.com/135x133.jpg/5fa2dd/ffffff",
+        "isbn": "930330149-8",
+        "description": "Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst. Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.",
+        "publishingdate": "2017/01/06",
+        "editorial": {
+            "id": 1,
+            "name": "Oveja Negra"
+        }
+    }, {
+        "id": 2,
+        "name": "justo sollicitudin ut suscipit a feugiat et eros vestibulum ac est lacinia nisi venenatis tristique fusce",
+        "image": "http://dummyimage.com/124x189.png/cc0000/ffffff",
+        "isbn": "196099297-X",
+        "description": "Etiam pretium iaculis justo. In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus. Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.",
+        "publishingdate": "2016/04/05",
+        "editorial": {
+            "id": 1,
+            "name": "Oveja Negra"
+        }
+    }, {
+        "id": 3,
+        "name": "fusce posuere felis sed lacus morbi sem mauris laoreet ut rhoncus aliquet pulvinar sed nisl nunc rhoncus dui vel sem",
+        "image": "http://dummyimage.com/165x167.png/cc0000/ffffff",
+        "isbn": "631383488-7",
+        "description": "Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque. Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus. Phasellus in felis. Donec semper sapien a libero. Nam dui.",
+        "publishingdate": "2016/11/22",
+        "editorial": {
+            "id": 2,
+            "name": "Siruela"
+        }
+    }, {
+        "id": 4,
+        "name": "orci nullam molestie nibh in lectus pellentesque at nulla suspendisse potenti cras in purus eu magna",
+        "image": "http://dummyimage.com/175x203.png/5fa2dd/ffffff",
+        "isbn": "084007710-6",
+        "description": "Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.",
+        "publishingdate": "2016/12/17",
+        "editorial": {
+            "id": 2,
+            "name": "Siruela"
+        }
+    }, {
+        "id": 5,
+        "name": "tincidunt eu felis fusce posuere felis sed lacus morbi sem mauris laoreet",
+        "image": "http://dummyimage.com/159x214.jpg/5fa2dd/ffffff",
+        "isbn": "267917365-1",
+        "description": "Nulla mollis molestie lorem. Quisque ut erat.",
+        "publishingdate": "2016/04/27",
+        "editorial": {
+            "id": 1,
+            "name": "Oveja Negra"
+        }
+    }, {
+        "id": 6,
+        "name": "et ultrices posuere cubilia curae mauris viverra diam vitae quam suspendisse potenti nullam porttitor lacus at turpis",
+        "image": "http://dummyimage.com/111x182.png/cc0000/ffffff",
+        "isbn": "077296395-9",
+        "description": "Suspendisse accumsan tortor quis turpis.",
+        "publishingdate": "2016/04/18",
+        "editorial": {
+            "id": 2,
+            "name": "Siruela"
+        }
+    }]

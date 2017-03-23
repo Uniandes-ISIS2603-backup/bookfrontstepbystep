@@ -3,7 +3,8 @@
         // External dependencies
         'ui.router',
   // Internal modules dependencies       
-        'bookModule'     
+        'bookModule',
+        'authorModule'
     ]);
    app.config(['$qProvider', function ($qProvider) {
     $qProvider.errorOnUnhandledRejections(false);
