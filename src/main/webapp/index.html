@@ -21,7 +21,7 @@
         <script src="src/app.js" type="text/javascript"></script> 
 
     </head>
-    <body style="padding-top: 60px;">
+    <body class="margin-top">
         <div class="container-fluid">
             <div > 
                 <h2>B O O K S T O R E</h2>
@@ -30,19 +30,18 @@
 
                 <div class="container-fluid">
 
-                  
-                        <ul class="nav nav-tabs">
-                            <li role="navigation" class="active"><a ui-sref="booksList">Books</a></li>
-                            <li role="presentation"><a ui-sref="authorsList">Authors</a></li>
-                            <li role="presentation"><a ui-sref="editorialsList">Editorials</a></li>
-                        </ul>
-                    
+
+                    <ul class="nav nav-tabs">
+                        <li role="navigation" class="active"><a ui-sref="booksList">Books</a></li>
+                        <li role="presentation"><a ui-sref="authorsList">Authors</a></li>
+                        <li role="presentation"><a ui-sref="editorialsList">Editorials</a></li>
+                    </ul>
+
                 </div> <!-- /.container-fluid -->
             </div>
+        </div>       
+        <div class="margin-top" ui-view="mainView"></div>
 
-        </div>
-        <div ui-view="mainView"></div>
 
-    </div>
-</body>
+    </body>
 </html>

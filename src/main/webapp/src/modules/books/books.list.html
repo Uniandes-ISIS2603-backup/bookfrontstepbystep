@@ -1,9 +1,7 @@
-<div class="container-fluid">  
-<div class="col-md-12">
-     
+<div class="container-fluid">
 
-        <div class="col-md-2" ng-repeat="record in records" class="thumbnail">
-          
+            <div class="col-md-2" ng-repeat="record in records">
+
                 <a ui-sref="bookDetail({bookId: record.id})" class="thumb">
                     <img class="img-responsive" ng-src='{{record.image}}' alt="{{record.name}}" />
                     <div class="caption">
@@ -13,9 +11,9 @@
                         </ul>
                     </div>
                 </a>
-            
-        </div>
 
-    </div>
-
+            </div>
 </div>
+
+  
+

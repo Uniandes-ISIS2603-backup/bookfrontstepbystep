@@ -28,3 +28,7 @@ and open the template in the editor.
     max-height: 20px;
     max-width: 200px;
 }
+
+.margin-top{
+    padding-top: 20px;
+    }
