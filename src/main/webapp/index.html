@@ -8,7 +8,7 @@
         <title>books</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-         <link rel="stylesheet" href="css/app.css" />
+        <link rel="stylesheet" href="css/app.css" />
         <script src="bower_components/angular/angular.js"></script>
         <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
 
@@ -23,26 +23,26 @@
     </head>
     <body style="padding-top: 60px;">
         <div class="container-fluid">
-            <div class="col-md-12">
-                <h1>BOOKSTORE</h1>
+            <div > 
+                <h2>B O O K S T O R E</h2>
             </div>
             <div class="col-md-12">
-                <nav class="navbar navbar-default">
-                    <div class="container-fluid">
 
-                        <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="collapse navbar-collapse" id="main-bar">
-                            <ul class="nav navbar-nav">
-                                <li><a ui-sref="booksList">Books</a></li>
-                                <li><a ui-sref="authorsList">Authors</a></li>
-                                <li><a ui-sref="editorialsList">Editorials</a></li>
-                            </ul>
-                        </div> <!-- /.navbar-collapse -->
-                    </div> <!-- /.container-fluid -->
-                </nav>
+                <div class="container-fluid">
+
+                  
+                        <ul class="nav nav-tabs">
+                            <li role="navigation" class="active"><a ui-sref="booksList">Books</a></li>
+                            <li role="presentation"><a ui-sref="authorsList">Authors</a></li>
+                            <li role="presentation"><a ui-sref="editorialsList">Editorials</a></li>
+                        </ul>
+                    
+                </div> <!-- /.container-fluid -->
             </div>
-            <div ui-view="mainView"></div>
+
         </div>
+        <div ui-view="mainView"></div>
 
-    </body>
+    </div>
+</body>
 </html>

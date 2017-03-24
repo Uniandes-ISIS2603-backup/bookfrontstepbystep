@@ -25,7 +25,7 @@
                 url: '/list',
                 parent: 'books',
                 views: {
-                    'mainView': {
+                    'listView': {
                         templateUrl: basePath + 'books.list.html'
                     }
                 }
@@ -36,7 +36,10 @@
                     bookId: null
                 },
                 views: {
-                    'mainView': {
+                    'listView': {
+                        templateUrl: basePath + 'books.list.html'
+                    },
+                    'detailView': {
                         templateUrl: basePath + 'books.detail.html',
                         controller: ['$scope', '$stateParams', function ($scope, $params) {
                                 $scope.currentRecord = $scope.records[$params.bookId-1];
