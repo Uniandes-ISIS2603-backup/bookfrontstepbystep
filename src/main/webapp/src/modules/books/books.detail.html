@@ -3,28 +3,28 @@
     <div class="row">
         <div class="col-md-3">
             <div class="thumb">
-                <img class="img-responsive" ng-src="{{currentRecord.image}}"/>
+                <img class="img-responsive" ng-src="{{currentBook.image}}"/>
             </div>
 
         </div>
         <div class="col-md-3">
             <dl>     
-                <dt>{{currentRecord.name}}</dt>
-                <ul ng-repeat="author in currentRecord.authors">
-                    <li>{{author.name}}</li>
+                <dt>{{currentBook.name}}</dt>
+                <ul ng-repeat="author in currentBook.authors">
+                    <a ui-sref="authorDetail({authorId: author.id})">{{author.name}}</a>
                 </ul>
                 <dt> ISBN</dt>
-                <dd>{{currentRecord.isbn}}</dd>
+                <dd>{{currentBook.isbn}}</dd>
                 <hr>
                 <dt>Publishing Date</dt>
-                <dd>{{currentRecord.publishingdate}}</dd>
+                <dd>{{currentBook.publishingdate}}</dd>
                 <hr>
                 <dt class="bold">Editorial</dt>
 
-                <dd>{{currentRecord.editorial.name}}</dd>
+                <dd>{{currentBook.editorial.name}}</dd>
                 <hr>
                 <dt class="bold">Description</dt>
-                <dd>{{currentRecord.description}}</dd>
+                <dd>{{currentBook.description}}</dd>
 
             </dl>
         </div>

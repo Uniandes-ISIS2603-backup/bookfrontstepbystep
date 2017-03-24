@@ -1,12 +1,12 @@
 <div class="container-fluid">
 
-            <div class="col-md-2" ng-repeat="record in records">
+            <div class="col-md-2" ng-repeat="book in books | filter:currentAuthor.name">
 
-                <a ui-sref="bookDetail({bookId: record.id})" class="thumb">
-                    <img class="img-responsive" ng-src='{{record.image}}' alt="{{record.name}}" />
+                <a ui-sref="bookDetail({bookId: book.id})" class="thumb">
+                    <img class="img-responsive" ng-src='{{book.image}}' alt="{{book.name}}" />
                     <div class="caption">
-                        <p>{{record.name}}</p>
-                        <ul ng-repeat="author in record.authors">
+                        <p>{{book.name}}</p>
+                        <ul ng-repeat="author in book.authors">
                             <li>{{author.name}}</li>
                         </ul>
                     </div>

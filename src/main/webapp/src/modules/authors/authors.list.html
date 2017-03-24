@@ -9,9 +9,9 @@
                 </tr>
             </thead>
             <tbody>
-                <tr ng-repeat="record in records">
-                    <td id="{{$index}}-name">{{record.name}}</td>
-                    <td id="{{$index}}-descrption">{{record.birthDate}}</td>                   
+                <tr ng-repeat="author in authors">
+                    <td id="{{$index}}-name">   <a ui-sref="authorDetail({authorId: author.id})">{{author.name}}</a></td>
+                    <td id="{{$index}}-descrption">{{author.birthDate}}</td>                   
                 </tr>
             </tbody>
         </table>

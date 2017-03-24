@@ -1,7 +1,9 @@
 [{
   "id": 1,
   "name": "J.K. Rowling",
+  "image":"http://cdn1us.denofgeek.com/sites/denofgeekus/files/2016/11/rowling.jpg",
   "birthDate": "1965/07/31",
+  "description":"Joanne 'Jo' Rowling, OBE, FRSL, pen names J. K. Rowling and Robert Galbraith, is a British novelist, screenwriter and film producer best known as the author of the Harry Potter fantasy series.",
   "books": []
 }, {
   "id": 2,
