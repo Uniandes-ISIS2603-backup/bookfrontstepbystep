@@ -23,8 +23,12 @@
     </head>
     <body class="margin-top">
         <div class="container-fluid">
-            <div > 
+            <div class="col-md-12" > 
                 <h2>B O O K S T O R E</h2>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
             </div>
             <div class="col-md-12">
 
@@ -35,6 +39,13 @@
                         <li role="navigation"><a ui-sref="booksList">Books</a></li>
                         <li role="presentation"><a ui-sref="authorsList">Authors</a></li>
                         <li role="presentation"><a ui-sref="editorialsList">Editorials</a></li>
+                    </ul>
+                    <ul class="nav nav-tabs navbar-right">
+                        
+                            <button type="button" class="btn btn-default btn-sm">
+                                <span class="glyphicon glyphicon-shopping-cart"></span> Shopping Cart Checkout
+                            </button>
+                        
                     </ul>
 
                 </div> <!-- /.container-fluid -->

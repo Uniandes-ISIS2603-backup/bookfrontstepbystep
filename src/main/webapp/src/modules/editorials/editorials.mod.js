@@ -5,28 +5,28 @@
             var basePath = 'src/modules/editorials/';
             $urlRouterProvider.otherwise("/editorialsList");
             self = this;
-            $stateProvider.state('editorialsList', {
-                url: '/list',
-                views: {
-                    'mainView': {
-                        templateUrl: basePath + 'editorials.list.html',
-                        resolve: {
-                            editorials: function ($http) {
-                                return $http.get('data/editorials.json').then(function (response) {
-                                    self.editorials = response.data;
-                                });
-                            }
-                        },
-                        controller: function ($scope) {
-                            $scope.records = self.editorials;
-                        }                       
-                    }
+             $stateProvider.state('editorials', {
+                url: '/editorials',
+                abstract: true,
+                resolve: {
+                    editorials: ['$http', function ($http) {
+                            return $http.get('data/editorials.json');
+                        }]
                 },
-            }).state('editorialCreate', {
-                url: '/create',
                 views: {
                     'mainView': {
-                        templateUrl: basePath + 'editorials.create.html'
+                        templateUrl: basePath + 'editorials.html',
+                        controller: ['$scope', 'editorials', function ($scope, editorials) {
+                                $scope.editorials = editorials.data;
+                            }]
+                    }
+                }
+            }).state('editorialsList', {
+                url: '/list',
+                parent: 'editorials',
+                views: {
+                    'listView': {
+                        templateUrl: basePath + 'editorials.list.html'
                     }
                 }
             });
