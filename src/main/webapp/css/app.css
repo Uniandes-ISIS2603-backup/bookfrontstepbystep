@@ -9,19 +9,11 @@ and open the template in the editor.
 */
 
 
-.thumb {
-    float: left;
-    
-    margin: -0.5em 1em 1.5em 0;
-    padding-bottom: 1em;
-    width: 100%;
-   
-}
 
 .margin-top{
     padding-top: 20px;
-    }
-    
+}
+
 .mainHeader {
     padding: 35px;
     background-image: url("img_tree.png");
@@ -34,17 +26,17 @@ and open the template in the editor.
 }
 
 .footer {
-  height: 59px;
-  margin: 0 auto;
-  color: black;
-  clear: both;
-  padding: 2em 2em;
-  background: #b3ccff;
-  position: relative;
-  top: 508px;
-   display: flex;
-   align-items: center;
-  justify-content: center;
+    height: 59px;
+    margin: 0 auto;
+    color: black;
+    clear: both;
+    padding: 2em 2em;
+    background: #b3ccff;
+    position: relative;
+    top: 508px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .footerTitle {

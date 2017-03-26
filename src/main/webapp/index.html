@@ -22,43 +22,34 @@
 
     </head>
     <body class="margin-top">
-        <div class="container-fluid mainHeader">
-            <div class="col-md-12" > 
-
-                <h2 class="mainTitle">B O O K S T O R E</h2>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                </ul>
-
-
-            </div>
-            <div class="col-md-12">
-
-                <div class="container-fluid">
-
-
+        <div class="container-fluid">
+            <div class="row mainHeader">
+                <div class="col-md-12"> 
+                   <h2 class="mainTitle">B O O K S T O R E</h2>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
+                </div>
+            </div> 
+            <div class="row">
+                <div class="col-md-12">
                     <ul class="nav nav-tabs">
                         <li role="navigation"><a ui-sref="booksList">Books</a></li>
                         <li role="presentation"><a ui-sref="authorsList">Authors</a></li>
                         <li role="presentation"><a ui-sref="editorialsList">Editorials</a></li>
                         <ul class="nav nav-tabs navbar-right">
-
                             <button type="button" class="btn btn-default btn-sm">
                                 <span class="glyphicon glyphicon-shopping-cart"></span> Shopping Cart Checkout
                             </button>
-
                         </ul>
                     </ul>
-
-
-                </div> <!-- /.container-fluid -->
+                </div>
             </div>
-        </div>       
-        <div class="margin-top" ui-view="mainView"></div>
-        <div class="footer">
-            <p class="footerTitle">Ejemplo Desarrollo de Sw en Equipos. Uniandes.2017 </p>
-            
-
+            <div class="margin-top" ui-view="mainView"></div>
+            <div class="footer">
+                <p class="footerTitle">Ejemplo Desarrollo de Sw en Equipos. Uniandes.2017 </p>
+            </div> 
+        </div>
     </body>
 </html>

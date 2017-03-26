@@ -1,20 +1,24 @@
 <div class="container-fluid">
-    <div class="col-md-2" ng-repeat="book in books| filter:currentAuthor.name">
-        <div panel  panel-default"> 
-             <div class="panel-body">
-                <div class="row">
-                    <a ui-sref="bookDetail({bookId: book.id})" class="thumb">
-                        <img class="img-responsive" ng-src='{{book.image}}' alt="{{book.name}}" />                    
-                    </a>
+    <div class="row">
+        <div class="col-md-2" ng-repeat="book in books| filter:currentAuthor.name">
+
+            <div class="thumbnail">
+
+                <a ui-sref="bookDetail({bookId: book.id})">
+                     
+                    <img class="img-responsive" ng-src='{{book.image}}' alt="{{book.name}}" /> 
+                   
+                </a>
+
+
+                <div class="caption text-center">
+                    <p>{{book.name}}</p>
+                    <p ng-repeat="author in book.authors">
+                        <a ui-sref="authorDetail({authorId: author.id})" class="thumb">{{author.name}}</li></a>
+                    </p>
                 </div>
-                <div class="row">
-                    <div class="caption">
-                        <p>{{book.name}}</p>
-                        <ul ng-repeat="author in book.authors">
-                            <a ui-sref="authorDetail({authorId: author.id})" class="thumb">{{author.name}}</li></a>
-                        </ul>
-                    </div>
-                </div>
+
+
             </div>
         </div>
     </div>
