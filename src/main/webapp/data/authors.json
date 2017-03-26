@@ -9,6 +9,8 @@
   "id": 2,
   "name": "J. R. R. Tolkien",
   "birthDate": "1892/01/03",
+  "image":"http://www.biografiasyvidas.com/biografia/t/fotos/tolkien.jpg",
+  "description":"Joanne 'Jo' Rowling, OBE, FRSL, pen names J. K. Rowling and Robert Galbraith, is a British novelist, screenwriter and film producer best known as the author of the Harry Potter fantasy series.",
   "books": []
 }, {
   "id": 3,
@@ -20,5 +22,8 @@
   "id": 4,
   "name": "Patrick Rothfuss",
   "birthDate": "1973/06/06",
+  "description":"Joanne 'Jo' Rowling, OBE, FRSL, pen names J. K. Rowling and Robert Galbraith, is a British novelist, screenwriter and film producer best known as the author of the Harry Potter fantasy series.",
+   "image":"http://librista.es/blog/wp-content/uploads/2014/05/patrick-rothfuss.jpg/5x10",
   "books": []
 }]
+ 

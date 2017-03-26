@@ -64,4 +64,36 @@
                 "birthDate": "1948/09/20"
 
             }]
+    } , {
+        "id": 5,
+        "name": "The Slow Regard of Silent Things",
+        "image": "http://www.patrickrothfuss.com/images/page/cover-slow-regard_277.jpg",
+        "isbn": "267917365-1",
+        "description": "Nulla mollis molestie lorem. Quisque ut erat.",
+        "publishingdate": "2016/04/27",
+        "editorial": {
+            "id": 1,
+            "name": "Oveja Negra"
+        },
+        "authors": [{
+                "id": 4,
+                "name": "Patrick Rothfuss",
+                "birthDate": "1973/06/06"
+            }]
+    }, {
+        "id": 6,
+        "name": "Harry Potter and the Philosopher's Stone",
+        "image": "https://katemacdonalddotnet.files.wordpress.com/2015/11/potter-1-4.jpg",
+        "isbn": "077296395-9",
+        "description": "Suspendisse accumsan tortor quis turpis.",
+        "publishingdate": "2016/04/18",
+        "editorial": {
+            "id": 2,
+            "name": "Siruela"
+        },
+        "authors": [{
+                "id": 1,
+                "name": "J.K. Rowling",
+                "birthDate": "1965/07/31"
+            }]
     }]
