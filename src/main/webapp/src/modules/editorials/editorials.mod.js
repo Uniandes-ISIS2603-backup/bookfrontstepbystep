@@ -17,7 +17,7 @@
                     'mainView': {
                         templateUrl: basePath + 'editorials.html',
                         controller: ['$scope', 'editorials', function ($scope, editorials) {
-                                $scope.editorials = editorials.data;
+                                $scope.editorialsRecords = editorials.data;
                             }]
                     }
                 }

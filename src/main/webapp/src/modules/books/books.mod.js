@@ -17,7 +17,7 @@
                     'mainView': {
                         templateUrl: basePath + 'books.html',
                         controller: ['$scope', 'books', function ($scope, books) {
-                                $scope.books = books.data;
+                                $scope.booksRecords = books.data;
                             }]
                     }
                 }
@@ -42,7 +42,7 @@
                     'detailView': {
                         templateUrl: basePath + 'books.detail.html',
                         controller: ['$scope', '$stateParams', function ($scope, $params) {
-                                $scope.currentBook = $scope.books[$params.bookId-1];
+                                $scope.currentBook = $scope.booksRecords[$params.bookId-1];
                             }]
                     }
 

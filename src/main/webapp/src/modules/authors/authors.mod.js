@@ -6,7 +6,7 @@
             var basePathBooks = 'src/modules/books/';
             $urlRouterProvider.otherwise("/authorsList");
 
-            $stateProvider.state('author', {
+            $stateProvider.state('authors', {
                 url: '/authors',
                 abstract: true,
                 resolve: {
@@ -18,13 +18,13 @@
                     'mainView': {
                         templateUrl: basePath + 'authors.html',
                         controller: ['$scope', 'authors', function ($scope, authors) {
-                                $scope.authors = authors.data;
+                                $scope.authorsRecords = authors.data;
                             }]
                     }
                 }
             }).state('authorsList', {
                 url: '/list',
-                parent: 'author',
+                parent: 'authors',
                 views: {
                     'listView': {
                         templateUrl: basePath + 'authors.list.html'
@@ -32,7 +32,7 @@
                 }
             }).state('authorDetail', {
                 url: '/{authorId:int}/detail',
-                parent: 'author',
+                parent: 'authors',
                 param: {
                     authorId: null
                 },
@@ -45,14 +45,14 @@
                         },
                         templateUrl: basePathBooks + 'books.list.html',
                         controller: ['$scope', 'books', '$stateParams', function ($scope, books, $params) {
-                                $scope.books = books.data;
-                                $scope.currentAuthor = $scope.authors[$params.authorId - 1];
+                                $scope.booksRecords = books.data;
+                                $scope.currentAuthor = $scope.authorsRecords[$params.authorId - 1];
                             }]
                     },
                     'detailView': {
                         templateUrl: basePath + 'authors.detail.html',
                         controller: ['$scope', '$stateParams', function ($scope, $params) {
-                                $scope.currentAuthor = $scope.authors[$params.authorId - 1];
+                                $scope.currentAuthor = $scope.authorsRecords[$params.authorId - 1];
                             }]
                     }
 
