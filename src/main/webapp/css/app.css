@@ -43,3 +43,13 @@ and open the template in the editor.
     font-variant: small-caps;
     font-weight: bold;
 }
+
+.alertPanel{
+    position: fixed;
+    width: 400px;
+    height: auto;
+    transition: all 0.5s;
+    opacity: 0;
+    top: 20px;
+    right: 50px;
+}
